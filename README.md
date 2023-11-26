@@ -213,4 +213,11 @@ appcenter codepush release-react -a <ownerName>/MyApp -d Staging
 
 ## CHEERS!!!!!
 
-Official Docs : [Get Started with the React Native](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/rn-get-started)
+Official Docs :
+
+
+[Get Started with the React Native](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/rn-get-started)
+
+[Releasing CodePush updates using the App Center CLI](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/cli)
+
+[Command-Line Interface (CLI) Documentation](https://learn.microsoft.com/en-us/appcenter/cli/)
