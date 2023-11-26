@@ -42,7 +42,7 @@ Handling platform-specific configurations can be challenging.
 #### Dependency on Third-Party Service:
 Relies on a third-party service (Microsoft) for updates.
 
-## Setup
+## Configuration Setup for React Native 0.60 version and above (iOS)
 
 ### Add App Center’s SDK to your app
 
@@ -212,3 +212,5 @@ appcenter codepush release-react -a <ownerName>/MyApp -d Staging
 ```
 
 ## CHEERS!!!!!
+
+Official Docs : [Get Started with the React Native](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/rn-get-started)
