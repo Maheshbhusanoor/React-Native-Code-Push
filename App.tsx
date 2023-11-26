@@ -73,6 +73,7 @@ function App(): JSX.Element {
           <Section title="Hello from Code Push">
             React Native Code Push for Android
           </Section>
+          <Section title="Yohh!!">Synced Successfully</Section>
         </View>
       </ScrollView>
     </SafeAreaView>
