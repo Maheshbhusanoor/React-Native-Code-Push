@@ -42,7 +42,7 @@ Handling platform-specific configurations can be challenging.
 #### Dependency on Third-Party Service:
 Relies on a third-party service (Microsoft) for updates.
 
-## Configuration Setup for React Native 0.60 version and above (iOS)
+## Configuration Setup for React Native 0.60 version and above 
 
 ### Add App Center’s SDK to your app
 
