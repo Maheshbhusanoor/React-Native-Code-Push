@@ -5,41 +5,41 @@ React Native CodePush is a service that allows React Native developers to push u
 
 ## Benefits:
 
-### Faster Updates:
+#### Faster Updates:
 Instant deployment of updates without app store submissions.
 
-### Reduced Review Times:
+####  Reduced Review Times:
 Shorter app store review times for critical updates.
 
-### Seamless User Experience:
+#### Seamless User Experience:
 Users receive updates without manual app store updates.
 
-### Flexible Release Management:
+#### Flexible Release Management:
 Control over update timing and target audiences.
 
-### Cost Savings:
+#### Cost Savings:
 Potential cost savings for frequent minor updates.
 
-### Cross-Platform Support:
+####  Cross-Platform Support:
 Works for both Android and iOS platforms.
 
 ## Limitations:
-### JavaScript and Assets Only:
+####  JavaScript and Assets Only:
 Limited to updating JavaScript code and assets.
 
-### Security Concerns:
+####  Security Concerns:
 Over-the-air updates raise security considerations.
 
-### Offline Limitations:
+#### Offline Limitations:
 Requires an internet connection for update checks.
 
-### Potential for Breaking Changes:
+####  Potential for Breaking Changes:
 Rapid updates may introduce bugs or breaking changes.
 
-### Platform-Specific Challenges:
+####  Platform-Specific Challenges:
 Handling platform-specific configurations can be challenging.
 
-### Dependency on Third-Party Service:
+#### Dependency on Third-Party Service:
 Relies on a third-party service (Microsoft) for updates.
 
 ## Setup
