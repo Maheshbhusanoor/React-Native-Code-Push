@@ -113,6 +113,65 @@ Code Snippet :
 
 <img width="884" alt="Screenshot 2023-11-26 at 7 06 09 PM" src="https://github.com/Maheshbhusanoor/React-Native-Code-Push/assets/12828834/f25b7925-5e95-4315-a8ad-68bf60350741">
 
+### Integrate the SDK IOS
+
+1. Add `AppCenter-Config.plist` just near the `info.plist`
+   
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+    <key>AppSecret</key>
+    <string>APP_SECRET_KEY</string>
+    </dict>
+</plist>
+```
+
+2. Add key in `info.plist`
+
+```
+<key>CodePushDeploymentKey</key>
+<string>DEPLOYMENT_KEY</string>
+```
+<img width="715" alt="Screenshot 2023-11-26 at 9 00 22 PM" src="https://github.com/Maheshbhusanoor/React-Native-Code-Push/assets/12828834/572e2d24-c9f2-4308-852f-9b262849bd0c">
+
+
+
+
+3. Update your `AppDelegate.mm`
+
+#####  Import Headers
+
+```
+#import <CodePush/CodePush.h>
+#import <AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes.h>
+```
+##### Replace 
+```
+return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+```
+
+##### With
+```
+    return [CodePush bundleURL];
+```
+
+##### Add the below code to the method didFinishLaunchingWithOptions
+
+
+```
+ [AppCenterReactNative register];
+[AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
+[AppCenterReactNativeCrashes registerWithAutomaticProcessing];
+```
+
+Code Snippet :
+
+<img width="1147" alt="Screenshot 2023-11-26 at 9 08 20 PM" src="https://github.com/Maheshbhusanoor/React-Native-Code-Push/assets/12828834/5f67dce7-453e-465a-8253-7119cda2e763">
+
 
 
 ### Finally Make changes to your React Native Code :
